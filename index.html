@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Todo App</title>
+  </head>
+  <body>
+    <header><p class="logo">TINTD</p></header>
+    <main>
+      <form onsubmit="" id="task__form">
+        <input
+          type="search"
+          placeholder="Enter Your Task Here..."
+          name="task-input"
+          class="task-input"
+        />
+        <select name="priority-level" id="priority-level">
+          <option value="" data-default="">Priority</option>
+          <option value="normal">normal</option>
+          <option value="low">low</option>
+          <option value="high">high</option>
+        </select>
+        <button type="button">ADD</button>
+      </form>
+      <div class="heading-filter">
+        <h2>Things I Need To Do:</h2>
+        <select
+          name="filter__priority-level"
+          id="filter__priority-level"
+          form="task-form"
+        >
+          <option value="" selected data-default>no filter</option>
+          <option value="normal">normal</option>
+          <option value="low">low</option>
+          <option value="high">high</option>
+        </select>
+      </div>
+      <div class="task__containers">
+        <section class="task__list">
+          <div class="task">
+            <p class="task__text">1. Make bed.</p>
+
+            <p id="task__priority">high</p>
+            <button type="button" class="task__button" id="task__button--tick">
+              <img
+                class="task__icons tick-icon"
+                src="tick.png"
+                alt="tick icon"
+              />
+            </button>
+            <button type="button" class="task__button" id="task__button--cross">
+              <img
+                class="task__icons cross-icon"
+                src="cross.png"
+                alt="cross icon"
+              />
+            </button>
+          </div>
+          <div class="task">
+            <p class="task__text">2. Check emails and messages.</p>
+            <p id="task__priority">high</p>
+
+            <button type="button" class="task__button" id="task__button--tick">
+              <img
+                class="task__icons tick-icon"
+                src="tick.png"
+                alt="tick icon"
+              />
+            </button>
+            <button type="button" class="task__button" id="task__button--cross">
+              <img
+                class="task__icons cross-icon"
+                src="cross.png"
+                alt="cross icon"
+              />
+            </button>
+          </div>
+          <div class="task">
+            <p class="task__text">3. Make a cup of coffee.</p>
+            <p id="task__priority">normal</p>
+
+            <button type="button" class="task__button" id="task__button--tick">
+              <img
+                class="task__icons tick-icon"
+                src="tick.png"
+                alt="tick icon"
+              />
+            </button>
+            <button type="button" class="task__button" id="task__button--cross">
+              <img
+                class="task__icons cross-icon"
+                src="cross.png"
+                alt="cross icon"
+              />
+            </button>
+          </div>
+          <div class="task">
+            <p class="task__text">
+              4. Review HTML and CSS of TINTD app and perform any changes if
+              required.
+            </p>
+            <p id="task__priority">high</p>
+
+            <button type="button" class="task__button" id="task__button--tick">
+              <img
+                class="task__icons tick-icon"
+                src="tick.png"
+                alt="tick icon"
+              />
+            </button>
+            <button type="button" class="task__button" id="task__button--cross">
+              <img
+                class="task__icons cross-icon"
+                src="cross.png"
+                alt="cross icon"
+              />
+            </button>
+          </div>
+          <div class="task">
+            <p class="task__text">
+              5. Work on vans page of the mini project and fix the data fetching
+              error.
+            </p>
+            <p id="task__priority">low</p>
+
+            <button type="button" class="task__button" id="task__button--tick">
+              <img
+                class="task__icons tick-icon"
+                src="tick.png"
+                alt="tick icon"
+              />
+            </button>
+            <button type="button" class="task__button" id="task__button--cross">
+              <img
+                class="task__icons cross-icon"
+                src="cross.png"
+                alt="cross icon"
+              />
+            </button>
+          </div>
+        </section>
+        <section class="task__list--completed">
+          <h2>Task Completed!</h2>
+          <ol>
+            <li>Watch figma tutorials.</li>
+            <li>Make UI design for the todo app using figma.</li>
+            <li>Translate UI design from figma to HTML and CSS.</li>
+            <li>
+              Install miragejs and setup server.js file and store vans data so
+              that it can be fetched to vans page using fetch api.
+            </li>
+          </ol>
+        </section>
+      </div>
+    </main>
+    <footer><p>&copy;TINTD is a prototype TODO app by Shaun Pant.</p></footer>
+  </body>
+</html>
