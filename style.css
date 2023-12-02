@@ -18,6 +18,10 @@
 body {
   background-color: var(--light);
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
 }
 header {
   height: 88px;
@@ -36,6 +40,7 @@ select option[data-default] {
   color: #888;
 }
 main {
+  margin-bottom: auto;
   padding-inline: 120px;
 }
 main > form {
@@ -113,7 +118,7 @@ form > button {
 .task__containers {
   display: flex;
 
-  margin-top: 2rem;
+  margin-block: 2rem;
   gap: 2rem;
   justify-content: space-evenly;
 }
@@ -192,7 +197,8 @@ form > button {
   margin-bottom: 8px;
 }
 footer {
-  margin-top: 3rem;
+  /* margin-top: 3rem; */
+
   height: 4rem;
   font-size: 16px;
   background-color: var(--darker);
@@ -200,7 +206,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
+  /* position: fixed; */
   bottom: 0;
   width: 100%;
 }
@@ -278,16 +284,11 @@ footer {
     height: 2rem;
   }
 
-  /* .task__containers > .task__list > .task > .task__text {
-    flex-basis: 300px;
-  } */
-
   .task__containers > .task__list > .task {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     gap: 0.8rem;
-    /* justify-content: space-between; */
     align-items: center;
     min-height: 2.3rem;
     margin-bottom: 0.8rem;
