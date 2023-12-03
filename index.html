@@ -15,12 +15,12 @@
   <body>
     <header><p class="logo">TINTD</p></header>
     <main>
-      <form onsubmit="" id="task__form">
+      <form id="task__form">
         <input
           type="search"
           placeholder="Enter Your Task Here..."
-          name="task-input"
-          class="task-input"
+          name="task__input"
+          class="task__input"
         />
         <select name="priority-level" id="priority-level">
           <option value="" data-default="">Priority</option>
@@ -35,7 +35,7 @@
         <select
           name="filter__priority-level"
           id="filter__priority-level"
-          form="task-form"
+          form="task__form"
         >
           <option value="" selected data-default>no filter</option>
           <option value="normal">normal</option>
