@@ -116,6 +116,7 @@ form > button {
   border-radius: 50px;
   font-size: 13.33px;
   height: 2.3rem;
+  color: var(--darkest);
   background-color: var(--dark);
 }
 .task__containers {
