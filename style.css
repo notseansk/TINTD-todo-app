@@ -202,7 +202,7 @@ footer {
   height: 4rem;
   font-size: 16px;
   background-color: var(--dark);
-  color: var(--light);
+  color: var(--darkest);
   display: flex;
   justify-content: center;
   align-items: center;
