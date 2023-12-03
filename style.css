@@ -112,12 +112,10 @@ form > button {
   border-radius: 50px;
   font-size: 13.33px;
   height: 2.3rem;
-
   background-color: var(--dark);
 }
 .task__containers {
   display: flex;
-
   margin-block: 2rem;
   gap: 2rem;
   justify-content: space-evenly;
@@ -133,6 +131,7 @@ form > button {
 }
 .task > .task__text {
   width: 380px;
+  flex-grow: 1;
   font-size: 1rem;
   font-weight: 400;
 }
@@ -163,7 +162,6 @@ form > button {
   height: 100%;
   width: 120px;
   text-align: center;
-  padding: 0 2rem;
   line-height: 220%;
   border-radius: 20px;
   letter-spacing: 0.1px;
@@ -173,7 +171,6 @@ form > button {
 }
 .task__containers > .task__list--completed {
   display: flex;
-
   flex-direction: column;
   align-items: center;
   gap: 1rem;
@@ -197,8 +194,6 @@ form > button {
   margin-bottom: 8px;
 }
 footer {
-  /* margin-top: 3rem; */
-
   height: 4rem;
   font-size: 16px;
   background-color: var(--darker);
@@ -206,7 +201,6 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* position: fixed; */
   bottom: 0;
   width: 100%;
 }
@@ -224,9 +218,6 @@ footer {
     flex-direction: column;
     justify-content: space-evenly;
   }
-  /* footer {
-    position: static;
-  } */
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -260,7 +251,6 @@ footer {
 
   form > select {
     padding: 2px 20px;
-
     font-weight: 300;
     font-size: 0.8rem;
   }
@@ -279,7 +269,6 @@ footer {
   }
   .heading-filter > select {
     padding-inline: 20px;
-
     font-size: 11.1083px;
     height: 2rem;
   }
@@ -293,8 +282,12 @@ footer {
     min-height: 2.3rem;
     margin-bottom: 0.8rem;
   }
+  /* .task:nth-child(2){
+
+  } */
+
   .task > .task__text {
-    width: 380px;
+    width: 600px;
     font-size: 13.33px;
     font-weight: 400;
   }
@@ -325,7 +318,6 @@ footer {
     height: 100%;
     width: 100px;
     text-align: center;
-    padding: 0 2rem;
     line-height: 220%;
     border-radius: 20px;
     letter-spacing: 0.1px;
