@@ -143,7 +143,9 @@ form > button {
 .task > .task__text {
   width: 380px;
   flex-grow: 1;
-  font-size: 1rem;
+  color: rgb(233, 217, 5);
+  text-shadow: 1px 1px 6px black;
+  font-size: 1.5rem;
   font-weight: 400;
 }
 .task > .task__button {
@@ -185,6 +187,8 @@ form > button {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  /* max-width: 50%;
+  margin-left: auto; */
   padding: 1rem 4rem;
   background-color: var(--accent-color-1);
   border-radius: 25px;

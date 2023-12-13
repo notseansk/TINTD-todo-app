@@ -17,18 +17,20 @@
     <main>
       <form id="task__form">
         <input
-          type="search"
+          type="text"
           placeholder="Enter Your Task Here..."
           name="task__input"
+          id="task__input"
           class="task__input"
+          required
         />
-        <select name="priority-level" id="priority-level">
+        <select name="priority-level" id="priority-level" required>
           <option value="" data-default="">Priority</option>
           <option value="normal">normal</option>
           <option value="low">low</option>
           <option value="high">high</option>
         </select>
-        <button type="button">ADD</button>
+        <button id="add__btn">ADD</button>
       </form>
       <div class="heading-filter">
         <h2>Things I Need To Do:</h2>
@@ -44,9 +46,9 @@
         </select>
       </div>
       <div class="task__containers">
-        <section class="task__list">
-          <div class="task">
-            <p class="task__text">1. Make bed.</p>
+        <section class="task__list" id="task__list">
+          <!-- <div class="task">
+            <p class="task__text">Make bed.</p>
 
             <p id="task__priority">high</p>
             <button type="button" class="task__button" id="task__button--tick">
@@ -63,8 +65,8 @@
                 alt="cross icon"
               />
             </button>
-          </div>
-          <div class="task">
+          </div> -->
+          <!-- <div class="task">
             <p class="task__text">2. Check emails and messages.</p>
             <p id="task__priority">high</p>
 
@@ -145,22 +147,23 @@
                 alt="cross icon"
               />
             </button>
-          </div>
+          </div> -->
         </section>
         <section class="task__list--completed">
           <h2>Task Completed!</h2>
-          <ol>
-            <li>Watch figma tutorials.</li>
+          <ol id="completed_list">
+            <!-- <li>Watch figma tutorials.</li>
             <li>Make UI design for the todo app using figma.</li>
             <li>Translate UI design from figma to HTML and CSS.</li>
             <li>
               Install miragejs and setup server.js file and store vans data so
               that it can be fetched to vans page using fetch api.
-            </li>
+            </li> -->
           </ol>
         </section>
       </div>
     </main>
     <footer><p>&copy;TINTD is a prototype TODO app by Shaun Pant.</p></footer>
+    <script type="text/javascript" src="./script.js"></script>
   </body>
 </html>
