@@ -143,8 +143,8 @@ form > button {
 .task > .task__text {
   width: 380px;
   flex-grow: 1;
-  color: rgb(233, 217, 5);
-  text-shadow: 1px 1px 6px black;
+  /* color: rgb(233, 217, 5);
+  text-shadow: 1px 1px 6px black; */
   font-size: 1.5rem;
   font-weight: 400;
 }
