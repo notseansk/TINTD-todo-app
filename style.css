@@ -26,6 +26,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh;
+  counter-reset: todo-list-counter;
 }
 header {
   height: 88px;
@@ -131,7 +132,9 @@ form > button {
   gap: 2rem;
   justify-content: space-evenly;
 }
-
+.task__containers > .task__list {
+  list-style-type: decimal;
+}
 .task__containers > .task__list > .task {
   display: flex;
   gap: 1.2rem;
@@ -139,12 +142,18 @@ form > button {
   align-items: center;
   min-height: 2.3rem;
   margin-bottom: 0.8rem;
+  &::before {
+    content: counter(todo-list-counter) ".) ";
+    counter-increment: todo-list-counter;
+    margin-right: -12px;
+    margin-top: 3px;
+    font-size: 1.3rem;
+    font-weight: 400;
+  }
 }
 .task > .task__text {
   width: 380px;
   flex-grow: 1;
-  /* color: rgb(233, 217, 5);
-  text-shadow: 1px 1px 6px black; */
   font-size: 1.5rem;
   font-weight: 400;
 }
@@ -185,8 +194,10 @@ form > button {
 .task__containers > .task__list--completed {
   display: flex;
   flex-direction: column;
+  margin-left: auto;
   align-items: center;
   gap: 1rem;
+  width: 50%;
   /* max-width: 50%;
   margin-left: auto; */
   padding: 1rem 4rem;
@@ -227,11 +238,16 @@ footer {
   main {
     padding-inline: 64px;
   }
+
   .task__containers {
     margin-top: 1rem;
     gap: 1.6rem;
     flex-direction: column;
     justify-content: space-evenly;
+  }
+  .task__containers > .task__list--completed {
+    margin-left: 0;
+    width: 100%;
   }
 }
 /* Extra small devices (phones, 600px and down) */

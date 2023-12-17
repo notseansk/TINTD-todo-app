@@ -40,7 +40,7 @@ const fetchTodos = async () => {
 fetchTodos();
 
 const addTask = (task, priority, id) => {
-  todoTaskList.innerHTML += `<div class="task">
+  todoTaskList.innerHTML += `<divs class="task">
   <p class="task__text">${task}</p>
   <p id="task__priority">${priority}</p>
   <button onclick="taskCompleted(event,${id})" type="button" class="task__button" id="task__button--tick">
@@ -57,7 +57,7 @@ const addTask = (task, priority, id) => {
       alt="cross icon"
     />
   </button>
-</div>`;
+</divs>`;
 };
 
 const taskCompleted = (e, id) => {
